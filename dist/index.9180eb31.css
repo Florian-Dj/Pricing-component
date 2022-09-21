@@ -39,10 +39,39 @@ body {
 
 .container {
   height: 100vh;
-  color: #4682b4;
+  color: #000;
   place-items: center;
-  font-size: 48px;
+  margin-top: 85px;
   display: grid;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.billing {
+  width: auto;
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+}
+
+.billing span {
+  margin: 0 15px;
+}
+
+#offer-content {
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+  display: flex;
+}
+
+.offer {
+  width: 360px;
+  background-color: #0ff;
 }
 
 

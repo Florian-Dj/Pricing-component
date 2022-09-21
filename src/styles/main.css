@@ -6,6 +6,34 @@ body {
     display: grid;
     place-items: center;
     height: 100vh;
-    color: steelblue;
-    font-size: 48px;
+    color: black;
+    margin-top: 85px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.billing {
+    font-size: 18px;
+    font-weight: bold;
+    width: auto;
+    display: flex;
+    margin-top: 40px;
+}
+.billing span{
+    margin: 0 15px;
+}
+
+#offer-content{
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer{
+    background-color: aqua;
+    width: 360px;
 }
