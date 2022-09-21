@@ -3,9 +3,6 @@ body {
 }
 
 .container {
-    display: grid;
-    place-items: center;
-    height: 100vh;
     color: black;
     margin-top: 85px;
 }

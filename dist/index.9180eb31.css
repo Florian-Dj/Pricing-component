@@ -38,11 +38,8 @@ body {
 }
 
 .container {
-  height: 100vh;
   color: #000;
-  place-items: center;
   margin-top: 85px;
-  display: grid;
 }
 
 h2 {
