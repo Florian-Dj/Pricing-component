@@ -6,21 +6,22 @@ body {
 .container {
     color: black;
     margin-top: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h2 {
     font-size: 32px;
     font-weight: bold;
-    text-align: center;
 }
 
 .billing {
     font-size: 18px;
     font-weight: bold;
-    width: auto;
-    display: flex;
     margin-top: 40px;
 }
+
 .billing span{
     margin: 0 15px;
 }
@@ -33,15 +34,41 @@ h2 {
 }
 
 .offer{
-    background-color: yellow;
     width: 360px;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offer-primary{
+    background: linear-gradient(315.46deg, #6B6EDC 0.77%, #A4A7E7 100%);;
+}
+
+.offer-secondary{
+    background-color: white;
+}
+
+.offer-left{
+    border-radius: 10px 0px 0px 10px;
+}
+
+.offer-right{
+    border-radius: 0px 10px 10px 0px;
 }
 
 .offer-title{
-    text-align: center;
     font-size: 18px;
     font-weight: bold;
+}
+
+.offer-title-primary{
+    color: white;
+    margin-top: 54px;
+}
+
+.offer-title-secondary{
+    color: black;
     margin-top: 32px;
 }
 
@@ -65,16 +92,26 @@ h2 {
 
 .offer-info{
     margin-top: 24px;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-hr{
+.offer-separator-primary, .offer-text-primary, .offer-pricing-primary{
+    color: white;
+}
+
+.offer-separator-secondary, .offer-text-secondary, .offer-pricing-secondary{
+    color: black;
+}
+
+.offer-separator{
     width: 296px;
+    margin: 0;
 }
 
 .offer-text{
     font-size: 15px;
-    text-align: center;
     margin: 18px 0;
 }
 
@@ -83,14 +120,31 @@ hr{
     height: 45px;
     font-size: 18px;
     font-weight: bold;
-    color: #6B6EDC;
-    background-color: white;
-    border: none;
     border-radius: 5px;
+    border: none;
     transition: 0.4s;
 }
 
-.offer-button:hover{
-    border: 1px solid #6B6EDC;
-    background-color: transparent;
+.offer-button-primary{
+    margin: 30px 0 50px 0;
+    color: #6B6EDC;
+    background: white;
+}
+
+.offer-button-primary:hover{
+    border: 1px solid white;  
+    background: transparent;
+    color: white;
+}
+
+.offer-button-secondary{
+    margin: 32px 0;
+    color: white;
+    background: linear-gradient(315.46deg, #6B6EDC 0.77%, #A4A7E7 100%);    
+}
+
+.offer-button-secondary:hover{
+    border: 1px solid #6B6EDC;  
+    background: transparent;
+    color: black;
 }

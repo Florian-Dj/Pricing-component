@@ -40,21 +40,21 @@ body {
 
 .container {
   color: #000;
+  flex-direction: column;
+  align-items: center;
   margin-top: 85px;
+  display: flex;
 }
 
 h2 {
-  text-align: center;
   font-size: 32px;
   font-weight: bold;
 }
 
 .billing {
-  width: auto;
   margin-top: 40px;
   font-size: 18px;
   font-weight: bold;
-  display: flex;
 }
 
 .billing span {
@@ -70,15 +70,41 @@ h2 {
 
 .offer {
   width: 360px;
-  background-color: #ff0;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.offer-primary {
+  background: linear-gradient(315.46deg, #6b6edc .77%, #a4a7e7 100%);
+}
+
+.offer-secondary {
+  background-color: #fff;
+}
+
+.offer-left {
+  border-radius: 10px 0 0 10px;
+}
+
+.offer-right {
+  border-radius: 0 10px 10px 0;
 }
 
 .offer-title {
-  text-align: center;
-  margin-top: 32px;
   font-size: 18px;
   font-weight: bold;
+}
+
+.offer-title-primary {
+  color: #fff;
+  margin-top: 54px;
+}
+
+.offer-title-secondary {
+  color: #000;
+  margin-top: 32px;
 }
 
 .offer-pricing {
@@ -100,16 +126,26 @@ h2 {
 }
 
 .offer-info {
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-top: 24px;
+  display: flex;
 }
 
-hr {
+.offer-separator-primary, .offer-text-primary, .offer-pricing-primary {
+  color: #fff;
+}
+
+.offer-separator-secondary, .offer-text-secondary, .offer-pricing-secondary {
+  color: #000;
+}
+
+.offer-separator {
   width: 296px;
+  margin: 0;
 }
 
 .offer-text {
-  text-align: center;
   margin: 18px 0;
   font-size: 15px;
 }
@@ -117,8 +153,6 @@ hr {
 .offer-button {
   width: 290px;
   height: 45px;
-  color: #6b6edc;
-  background-color: #fff;
   border: none;
   border-radius: 5px;
   font-size: 18px;
@@ -126,8 +160,27 @@ hr {
   transition: all .4s;
 }
 
-.offer-button:hover {
-  background-color: #0000;
+.offer-button-primary {
+  color: #6b6edc;
+  background: #fff;
+  margin: 30px 0 50px;
+}
+
+.offer-button-primary:hover {
+  color: #fff;
+  background: none;
+  border: 1px solid #fff;
+}
+
+.offer-button-secondary {
+  color: #fff;
+  background: linear-gradient(315.46deg, #6b6edc .77%, #a4a7e7 100%);
+  margin: 32px 0;
+}
+
+.offer-button-secondary:hover {
+  color: #000;
+  background: none;
   border: 1px solid #6b6edc;
 }
 
