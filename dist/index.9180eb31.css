@@ -40,10 +40,12 @@ body {
 
 .container {
   color: #000;
+  z-index: 1;
   flex-direction: column;
   align-items: center;
   margin-top: 85px;
   display: flex;
+  position: relative;
 }
 
 h2 {
@@ -197,7 +199,7 @@ input[type="checkbox"] {
   border-radius: 5px;
   font-size: 18px;
   font-weight: bold;
-  transition: all .4s;
+  transition: all .5s;
 }
 
 .offer-button-primary {
@@ -214,7 +216,7 @@ input[type="checkbox"] {
 
 .offer-button-secondary {
   color: #fff;
-  background: linear-gradient(315.46deg, #6b6edc .77%, #a4a7e7 100%);
+  background: #a4a7e7;
   margin: 32px 0;
 }
 
@@ -222,6 +224,18 @@ input[type="checkbox"] {
   color: #000;
   background: none;
   border: 1px solid #6b6edc;
+}
+
+#top-svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#bottom-svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 

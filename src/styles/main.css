@@ -4,11 +4,13 @@ body {
 }
 
 .container {
+    position: relative;
     color: black;
     margin-top: 85px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1;
 }
 
 h2 {
@@ -164,7 +166,7 @@ input[type="checkbox"]{
     font-weight: bold;
     border-radius: 5px;
     border: none;
-    transition: 0.4s;
+    transition: 0.5s;
 }
 
 .offer-button-primary{
@@ -182,7 +184,7 @@ input[type="checkbox"]{
 .offer-button-secondary{
     margin: 32px 0;
     color: white;
-    background: linear-gradient(315.46deg, #6B6EDC 0.77%, #A4A7E7 100%);    
+    background: #A4A7E7;
 }
 
 .offer-button-secondary:hover{
@@ -190,4 +192,15 @@ input[type="checkbox"]{
     background: transparent;
     color: black;
 }
-  
+
+#top-svg{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#bottom-svg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
